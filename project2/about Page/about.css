@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+main{
+    padding: 30px;
+}
+main>h1{
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    font-size: 43px;
+
+    /* display: inline-block; */
+}
+
+P{
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgb(75, 70, 70);
+    
+}
+main>p:first-of-type{
+    color: rgb(77, 69, 69);
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 1000px;
+}
+section{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    padding:10px;
+}
+section h2{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin: auto;
+    border-bottom: 1px solid;
+    text-align: center;
+    
+}
+section img{
+    margin: 40px;
+    object-fit: contain;
+    /* border: 1px solid; */
+}
+.section-content p{
+   line-height: 1.6;
+   /* border: 1px solid; */
+    margin: auto;
+    font-size: 12px;
+   
+}  
+.section-content button{
+    padding: 7px 20px;
+    margin-top: 10px;background: transparent;
+    cursor: pointer;
+    border:1px solid;
+    background-color: transparent;
+    color: black;
+    transition: all .45s linear ;
+    scale: 0.99;
+}
+.section-content button:hover{
+    background-color:rgb(14, 96, 204) ;
+    color:#fff;
+    scale: 1;
+}
+@media screen and (max-width: 1100px){
+    section{
+        flex-direction: column;
+    }
+    .section-img{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .section-content h2{
+        font-size: 45px;
+    }
+     p , .section-content p{
+        font-size: 22px;
+        margin: auto;
+    }
+    .section-content button{
+        padding: 10px 30px;
+        font-size: 19px;
+        margin: auto;
+    }
+    .section-button {
+        margin-top: 10px;
+       /* border: 1px solid; */
+       text-align: center;
+    }
+}
+@media screen and (max-width: 500px){
+    section h2{
+        margin-bottom: 20px;
+    }
+}

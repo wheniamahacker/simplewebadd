@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.979)) ,url(pexels-apasaric-325193.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+}
+/*---------------------------------Nav section-------------------------------------*/
+nav{
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+nav .logo span{
+    letter-spacing: -7px;
+    color: rgb(67, 133, 255);
+}
+nav ul {
+    display: flex;
+   
+}
+nav ul li {
+    list-style: none;
+    padding: 0px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 21px;
+    color: rgb(255, 233, 233);
+    padding: 2px 5px ;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    transition:all .15s linear ;
+}
+/*---------------------------------Main section-------------------------------------*/
+section{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+section button{
+    font-size: 10px;
+    background: transparent;
+    padding: 5px 15px;
+    color:rgba(249, 255, 246, 0.897);
+    border: 2px solid;
+    cursor: pointer;
+    letter-spacing: 1.4px;
+}
+section button:hover{
+    scale: 1.01;
+    background-color: black;
+    color: #fff3f3;
+    transition: linear all .25s ;
+}
+.section-iframe iframe {
+    position: relative;
+    overflow: hidden;
+    scrollbar-width: none;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    transition: all linear .45s;
+}
+
+.section-iframe iframe::-webkit-scrollbar {
+        display: none; 
+    /* Chrome, Safari */
+}
+
+@media screen and (max-width: 750px){
+    nav{
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px){
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li {
+        margin:0px 10px;   
+    }
+    nav ul li a{
+        font-size: 27px;
+    }
+    section h1{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 500px){
+    section h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 350px){
+    section h1{
+        font-size: 22px;
+    }
+    section button{
+        font-size: 7px;
+    }
+}
